@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.glitch.surveyapp"
+    namespace = "com.mervepolat.homework1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.glitch.surveyapp"
+        applicationId = "com.mervepolat.homework1"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
