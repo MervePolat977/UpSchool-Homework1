@@ -1,4 +1,4 @@
-package com.glitch.surveyapp.ui
+package com.mervepolat.homework1.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
