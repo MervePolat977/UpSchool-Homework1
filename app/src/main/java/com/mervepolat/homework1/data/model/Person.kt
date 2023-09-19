@@ -1,4 +1,4 @@
-package com.glitch.surveyapp.data.model
+popackage com.mervepolat.homework1.data.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
