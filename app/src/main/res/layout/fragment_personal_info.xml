@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.PersonalInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/personal_info_txt_name"
+                style="@style/Widget.AppCompat.ActionBar.TabText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:text="@string/name_surname" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/personal_info_txtfield_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="13"
+                app:endIconDrawable="@drawable/ic_checkmark"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:prefixText="+90"
+                app:prefixTextColor="@color/purple_1"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/personal_info_etxt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:textColor="@color/colorText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/personal_info_txtfield_mail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                app:endIconDrawable="@drawable/ic_checkmark"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:startIconDrawable="@drawable/ic_mail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/personal_info_etxt_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:textColor="@color/colorText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/personal_info_txtfield_city"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="15"
+                app:endIconDrawable="@drawable/ic_checkmark"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:startIconDrawable="@drawable/ic_location">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/personal_info_etxt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/city"
+                    android:inputType="text"
+                    android:textColor="@color/colorText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/personal_info_btn_start_survey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorButton"
+                android:text="@string/start_survey" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
